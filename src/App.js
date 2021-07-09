@@ -1,14 +1,18 @@
 import { Layout } from './Layout'
 import { Information, Map, Settings, Sight, NotFound } from './pages'
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 function App() {
   return (
     <Layout>
-      <Map />
-      <Sight />
-      <Information />
-      <Settings />
-      <NotFound />
+      <Switch>
+        <Route exact path="/" component={Map} />
+        <Route exact path="/sight" component={Sight} />
+        <Route exact path="/information" component={Information} />
+        <Route exact path="/settings" component={Settings} />
+        <Route exact path="/not-found" component={NotFound} />
+        <Redirect to="/not-found" />
+      </Switch>
     </Layout>
   );
 }

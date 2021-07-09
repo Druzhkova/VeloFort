@@ -4,6 +4,7 @@ import {
     dashboard,
     localLibrary,
     settings } from '../assets'
+import { Link } from "react-router-dom";
 
 export const Layout = ({ children }) => {
     return (
@@ -12,10 +13,10 @@ export const Layout = ({ children }) => {
                 {children}
             </Content>
             <Nav>
-                <Icon src={bike} alt="Bike" />
-                <Icon src={dashboard} alt="Dashboard" />
-                <Icon src={localLibrary} alt="Local library" />
-                <Icon src={settings} alt="Settings" />
+                <Link to="/"><Icon src={bike} alt="Bike" /></Link>
+                <Link to="/sight"><Icon src={dashboard} alt="Dashboard" /></Link>
+                <Link to="/information"><Icon src={localLibrary} alt="Local library" /></Link>
+                <Link to="/settings"><Icon src={settings} alt="Settings" /></Link>
             </Nav>
         </Wrapper>
     );
