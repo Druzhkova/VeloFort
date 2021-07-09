@@ -8,6 +8,7 @@ import dashboardHover from './dashboard-hover.svg';
 import localLibraryHover from './local-library-hover.svg';
 import settingsHover from './settings-hover.svg';
 
+import btnPlay from './btn-play.svg';
 
 
 export {
@@ -18,5 +19,6 @@ export {
     bikeHover,
     dashboardHover,
     localLibraryHover,
-    settingsHover
+    settingsHover,
+    btnPlay
 }

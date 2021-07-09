@@ -1,6 +1,7 @@
 import { Layout } from './Layout'
 import { Information, Map, Settings, Sight, NotFound } from './pages'
 import { Route, Switch, Redirect } from 'react-router-dom';
+import { AudioPlayer } from './components'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route exact path="/not-found" component={NotFound} />
         <Redirect to="/not-found" />
       </Switch>
+      <AudioPlayer />
     </Layout>
   );
 }
