@@ -1,9 +1,9 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 export const Map = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
-    return (
-        <h1>{t('map')}</h1>
-    )
-}
+  return (
+    <h1>{t('map')}</h1>
+  );
+};

@@ -1,26 +1,27 @@
-import { useState, useRef, useEffect } from 'react'
-import { Button } from '../Button'
-import { ControlPanel } from '../ControlPanel'
+import { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
+import { Button } from '../Button';
+import { ControlPanel } from '../ControlPanel';
 
-export const Slider = ({ percentage = 0, onChange, play, isPlaying, duration, currentTime}) => {
-  const [position, setPosition] = useState(0)
-  const [marginLeft, setMarginLeft] = useState(0)
-  const [progressBarWidth, setProgressBarWidth] = useState(0)
+export const Slider = ({
+  percentage = 0, onChange, play, isPlaying, duration, currentTime,
+}) => {
+  const [position, setPosition] = useState(0);
+  const [marginLeft, setMarginLeft] = useState(0);
+  const [progressBarWidth, setProgressBarWidth] = useState(0);
 
-  const rangeRef = useRef()
-  const thumbRef = useRef()
+  const rangeRef = useRef();
+  const thumbRef = useRef();
 
   useEffect(() => {
-    const rangeWidth = rangeRef.current.getBoundingClientRect().width
-    const thumbWidth = thumbRef.current.getBoundingClientRect().width
-    const centerThumb = (thumbWidth / 100) * percentage * -1
-    const centerProgressBar =
-      thumbWidth + (rangeWidth / 100) * percentage - (thumbWidth / 100) * percentage
-    setPosition(percentage)
-    setMarginLeft(centerThumb)
-    setProgressBarWidth(centerProgressBar)
-  }, [percentage])
+    const rangeWidth = rangeRef.current.getBoundingClientRect().width;
+    const thumbWidth = thumbRef.current.getBoundingClientRect().width;
+    const centerThumb = (thumbWidth / 100) * percentage * -1;
+    const centerProgressBar = thumbWidth + (rangeWidth / 100) * percentage - (thumbWidth / 100) * percentage;
+    setPosition(percentage);
+    setMarginLeft(centerThumb);
+    setProgressBarWidth(centerProgressBar);
+  }, [percentage]);
 
   return (
     <Wrapper>
@@ -30,32 +31,32 @@ export const Slider = ({ percentage = 0, onChange, play, isPlaying, duration, cu
       />
       <Container>
         <ControlPanel
-                duration={duration}
-                currentTime={currentTime}
+          duration={duration}
+          currentTime={currentTime}
         />
         <ProgressBar
           style={{
-            width: `${progressBarWidth}px`
+            width: `${progressBarWidth}px`,
           }}
-        ></ProgressBar>
+        />
         <Thumb
           ref={thumbRef}
           style={{
             left: `${position}%`,
-            marginLeft: `${marginLeft}px`
+            marginLeft: `${marginLeft}px`,
           }}
-        ></Thumb>
+        />
         <Input
-          type='range'
+          type="range"
           value={position}
           ref={rangeRef}
-          step='0.01'
+          step="0.01"
           onChange={onChange}
         />
       </Container>
     </Wrapper>
-  )
-}
+  );
+};
 
 const Wrapper = styled.div`
   width: 100%;

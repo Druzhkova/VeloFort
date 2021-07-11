@@ -1,13 +1,13 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
 import HttpApi from 'i18next-http-backend';
+import reportWebVitals from './reportWebVitals';
+import App from './App';
 
 i18n
   .use(initReactI18next)
@@ -15,21 +15,21 @@ i18n
   .use(HttpApi)
   .init({
     supportedLngs: ['ru', 'en', 'fr'],
-    fallbackLng: "en",
+    fallbackLng: 'en',
     detection: {
       order: ['cookie', 'htmlTag', 'localStorage', 'path', 'subdomain'],
-      caches: ['cookie']
+      caches: ['cookie'],
     },
     backend: {
       loadPath: '/assets/locales/{{lng}}/translation.json',
     },
   });
 
-  const loadingMarkup = (
-    <div>
-      <h3>Loading..</h3>
-    </div>
-  )
+const loadingMarkup = (
+  <div>
+    <h3>Loading..</h3>
+  </div>
+);
 
 ReactDOM.render(
   <React.StrictMode>
@@ -39,7 +39,7 @@ ReactDOM.render(
       </Suspense>
     </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 reportWebVitals();

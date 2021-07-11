@@ -1,17 +1,15 @@
 import styled from 'styled-components';
-import { btnPlay } from '../../../../assets'
+import { btnPlay } from '../../../../assets';
 
-export const Button = ({ play, isPlaying }) => {
-    return (
-        <Container>
-            {
-                isPlaying 
-                    ? <BtnStop onClick={play}/>
-                    : <BtnPlay src={btnPlay} onClick={play} alt=""/>
-            }
-        </Container>
-      )
-}
+export const Button = ({ play, isPlaying }) => (
+  <Container>
+    {
+      isPlaying
+        ? <BtnStop onClick={play} />
+        : <BtnPlay src={btnPlay} onClick={play} alt="" />
+    }
+  </Container>
+);
 
 const Container = styled.div`
   position: relative;
@@ -43,6 +41,3 @@ const BtnStop = styled.div`
   border-right: 4px solid#323765;
   cursor: pointer;
 `;
-
-
-

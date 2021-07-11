@@ -1,7 +1,9 @@
-import { Layout } from './Layout'
-import { Information, Map, Settings, Sight, NotFound } from './pages'
 import { Route, Switch, Redirect } from 'react-router-dom';
-import { AudioPlayer } from './components'
+import { Layout } from './layout';
+import {
+  Information, Map, Settings, Sight, NotFound,
+} from './pages';
+import { AudioPlayer } from './components';
 
 function App() {
   return (
