@@ -3,6 +3,7 @@
   width: 100%;
   user-select: none;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .dropdownBtn {
