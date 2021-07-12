@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import song from '../../assets/Brian Crain - A Simple Life.mp3';
+import song from '../../assets/music/Brian Crain - A Simple Life.mp3';
 import { Slider } from './components';
 import styles from './AudioPlayer.module.css';
 
