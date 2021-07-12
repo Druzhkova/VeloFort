@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Layout = ({ children }) => {
-  const [activePage, setActivePage] = useState('map');
+  const [activePage, setActivePage] = useState('');
 
   return (
     <Wrapper>

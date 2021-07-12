@@ -2,7 +2,6 @@
   max-width: 371px;
   width: 100%;
   user-select: none;
-  margin: 100px auto;
   position: relative;
 }
 
@@ -36,4 +35,9 @@
 
 .dropdownItem:hover {
   background: #f4f4f4;
+}
+
+.dropdownTitle {
+  font-weight: bold;
+  font-size: 14px;
 }

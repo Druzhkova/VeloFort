@@ -1,7 +1,7 @@
-import styled from 'styled-components';
 import { useState, useRef } from 'react';
 import song from '../../assets/Brian Crain - A Simple Life.mp3';
 import { Slider } from './components';
+import styles from './AudioPlayer.module.css';
 
 export const AudioPlayer = () => {
   const [percentage, setPercentage] = useState(0);
@@ -41,7 +41,7 @@ export const AudioPlayer = () => {
   };
 
   return (
-    <Container>
+    <div className={styles.container}>
       <Slider
         percentage={percentage}
         onChange={onChange}
@@ -59,14 +59,6 @@ export const AudioPlayer = () => {
         src={song}
       />
 
-    </Container>
+    </div>
   );
 };
-
-const Container = styled.div`
-    max-width: 370px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`;

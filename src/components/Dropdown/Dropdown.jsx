@@ -25,14 +25,13 @@ export const Dropdown = () => {
   ];
 
   return (
-    <>
-      <h2>{t('Application_language')}</h2>
-      <div className={styles.dropdown}>
-        <div className={styles.dropdownBtn} onClick={() => setIsActive(!isActive)}>
-          {selected}
-          <img src={expandMore} alt="Expand more" />
-        </div>
-        {isActive && (
+    <div className={styles.dropdown}>
+      <h2 className={styles.dropdownTitle}>{t('Application_language')}</h2>
+      <div className={styles.dropdownBtn} onClick={() => setIsActive(!isActive)}>
+        {selected}
+        <img src={expandMore} alt="Expand more" />
+      </div>
+      {isActive && (
         <div className={styles.dropdownContent}>
           {languages.map(({ code, name }, index) => (
             name !== selected
@@ -51,8 +50,7 @@ export const Dropdown = () => {
                )
           ))}
         </div>
-        )}
-      </div>
-    </>
+      )}
+    </div>
   );
 };
