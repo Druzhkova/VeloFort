@@ -15,7 +15,7 @@ i18n
     resources,
     fallbackLng: 'en',
     detection: {
-      order: ['htmlTag', 'localStorage', 'path', 'subdomain'],
+      order: ['localStorage', 'htmlTag', 'path', 'subdomain'],
     },
   });
 

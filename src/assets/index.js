@@ -9,6 +9,7 @@ import project from './icons/project.svg';
 import marker from './icons/marker.svg';
 import timeline from './icons/timeline.svg';
 import watch from './icons/watch.svg';
+import notFound from './icons/not-found.gif';
 
 export {
   btnPlay,
@@ -22,4 +23,5 @@ export {
   marker,
   timeline,
   watch,
+  notFound,
 };
