@@ -3,6 +3,7 @@ import informationPage from './informationPage.json';
 import mapPage from './mapPage.json';
 import sightPage from './sightPage.json';
 import sightObject from './sightObject.json';
+import notFoundPage from './notFoundPage.json';
 
 export const translationRu = {
   settingsPage,
@@ -10,4 +11,5 @@ export const translationRu = {
   mapPage,
   sightPage,
   sightObject,
+  notFoundPage,
 };
