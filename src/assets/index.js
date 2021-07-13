@@ -6,6 +6,9 @@ import lodging from './icons/lodging.svg';
 import food from './icons/food.svg';
 import cyclist from './icons/cyclist.svg';
 import project from './icons/project.svg';
+import marker from './icons/marker.svg';
+import timeline from './icons/timeline.svg';
+import watch from './icons/watch.svg';
 
 export {
   btnPlay,
@@ -16,4 +19,7 @@ export {
   food,
   cyclist,
   project,
+  marker,
+  timeline,
+  watch,
 };
