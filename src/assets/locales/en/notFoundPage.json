@@ -1,3 +1,5 @@
 {
-  "not_found": "Not found"
+  "title": "OOPS, SORRY WE CAN'T FIND THAT PAGE!",
+  "subtitle": "Either something went wrong or the page doesn't exist anymore",
+  "btn_home_page": "HOME PAGE"
 }

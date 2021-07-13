@@ -1,3 +1,5 @@
 {
-  "not_found": "Pas trouvé"
+  "title": "OOPS, DÉSOLÉ, NOUS NE POUVONS PAS TROUVER CETTE PAGE!",
+  "subtitle": "Soit quelque chose s'est mal passé, soit la page n'existe plus",
+  "btn_home_page": "PAGE D'ACCUEIL"
 }
