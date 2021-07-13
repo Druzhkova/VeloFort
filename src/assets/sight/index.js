@@ -4,25 +4,25 @@ import {
 
 export const data = [
   {
-    title: 'Белый дворец',
+    title: 'sight1',
     time: '6км.',
     distance: '2ч.',
     img: sight1,
   },
   {
-    title: 'Брестская крепость',
+    title: 'sight2',
     time: '3км.',
     distance: '1ч.',
     img: sight2,
   },
   {
-    title: 'Музей железнодорожной техники',
+    title: 'sight3',
     time: '8км.',
     distance: '1.5ч.',
     img: sight3,
   },
   {
-    title: 'Холмские ворота',
+    title: 'sight4',
     time: '2км.',
     distance: '1ч.',
     img: sight4,
