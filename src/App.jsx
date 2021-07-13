@@ -1,7 +1,7 @@
 import { Route, Switch, Redirect } from 'react-router-dom';
 import { Layout } from './layout';
 import {
-  Information, Map, Settings, Sight, NotFound,
+  Information, Map, Settings, Sight, NotFound, SightDetails,
 } from './pages';
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
         <Route exact path="/information" component={Information} />
         <Route exact path="/settings" component={Settings} />
         <Route exact path="/not-found" component={NotFound} />
+        <Route exact path={'/:title'} component={SightDetails} />
         <Redirect to="/not-found" />
       </Switch>
     </Layout>

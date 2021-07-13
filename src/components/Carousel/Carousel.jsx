@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import styled from 'styled-components';
 
-export function Carousel({ data }) {
+export function Carousel({ img, title }) {
   const MARGIN_IMG = 20;
 
   const scrollRef = useRef(null);
@@ -42,13 +42,13 @@ export function Carousel({ data }) {
   return (
     <Container onKeyDown={handleKeyDown} tabIndex="0">
       <CarouselBox ref={scrollRef}>
-        { data
-          ? data.map(({ title, img }, index) => (
+        { img
+          ? img.map((item, index) => (
             <Img
               key={index}
               ref={imgRef}
               alt={title}
-              src={img}
+              src={item}
             />
           ))
           : null }
