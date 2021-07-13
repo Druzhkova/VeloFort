@@ -15,8 +15,7 @@ i18n
     resources,
     fallbackLng: 'en',
     detection: {
-      order: ['cookie', 'htmlTag', 'localStorage', 'path', 'subdomain'],
-      caches: ['cookie'],
+      order: ['htmlTag', 'localStorage', 'path', 'subdomain'],
     },
   });
 
