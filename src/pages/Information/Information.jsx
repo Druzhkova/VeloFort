@@ -3,13 +3,14 @@ import styles from './Information.module.css';
 import {
   schedule, arrow, lodging, food, cyclist, project,
 } from '../../assets';
+import { Button } from '../../components';
 
 export const Information = () => {
   const { t } = useTranslation();
 
   return (
     <>
-      <h1>{t('information')}</h1>
+      <h1>{t('informationPage.information')}</h1>
       <div className={styles.news}>
         <div className={styles.inner}>
           <div className={styles.content}>
@@ -69,7 +70,7 @@ export const Information = () => {
         <div className={styles.supportInner}>
           <h2 className={styles.title}>Поддержать проект</h2>
           <p>Даже +1 рубль говорит нам, что наша работа нужна и важна. Все это мы стараемся сделать бесплатным и доступным для вас!</p>
-          <div className={styles.button}>Поддержать</div>
+          <Button>Поддержать</Button>
         </div>
       </div>
     </>

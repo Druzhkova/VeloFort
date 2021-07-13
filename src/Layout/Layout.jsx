@@ -73,6 +73,7 @@ const Wrapper = styled.div`
     align-items: center;
     box-shadow: 0 0 3px rgba(0,0,0,0.1);
     background: #ffffff;
+    height: 100vh;
 `;
 
 const Nav = styled.nav`
@@ -88,9 +89,10 @@ const Nav = styled.nav`
 
 const Content = styled.div`
     box-sizing: border-box;
-    min-height: calc(100vh - 70px);
+    height: calc(100vh - 70px);
     padding: 30px 20px 15px;
     width: 100%;
+    overflow-y: scroll;
 `;
 
 const Svg = styled.svg`

@@ -1,0 +1,10 @@
+{
+  "settings": "Settings",
+  "application_language": "Application language",
+  "offline_audioguide": "Offline audioguide",
+  "subtitle_offline_audioguide": "Allows you to download the necessary files for listening without an Internet connection",
+  "btn_download": "Download",
+  "download_track": "Download the track",
+  "subtitle_download_track": "The route contains checkpoints, useful information about historical sites and everything you need on the way",
+  "how_to_use_file": "How to use the file"
+}

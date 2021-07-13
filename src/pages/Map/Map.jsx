@@ -7,7 +7,7 @@ export const Map = () => {
 
   return (
     <>
-      <h1>{t('map')}</h1>
+      <h1>{t('mapPage.map')}</h1>
       <AudioPlayer />
     </>
   );

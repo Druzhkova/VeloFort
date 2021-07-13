@@ -26,7 +26,7 @@ export const Dropdown = () => {
 
   return (
     <div className={styles.dropdown}>
-      <h2 className={styles.dropdownTitle}>{t('Application_language')}</h2>
+      <h2 className={styles.dropdownTitle}>{t('settingsPage.application_language')}</h2>
       <div className={styles.dropdownBtn} onClick={() => setIsActive(!isActive)}>
         {selected}
         <img src={expandMore} alt="Expand more" />

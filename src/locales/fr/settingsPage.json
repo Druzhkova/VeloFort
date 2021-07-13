@@ -1,0 +1,10 @@
+{
+  "settings": "Personnalisation",
+  "application_language": "Langue d'application",
+  "offline_audioguide": "Audioguide hors ligne",
+  "subtitle_offline_audioguide": "Permet de télécharger les fichiers nécessaires à l'écoute sans connexion Internet",
+  "btn_download": "Télécharger",
+  "download_track": "Télécharger la piste",
+  "subtitle_download_track": "L'itinéraire contient des points de contrôle, des informations utiles sur les sites historiques et tout ce dont vous avez besoin sur le chemin",
+  "how_to_use_file": "Comment utiliser le fichier"
+}

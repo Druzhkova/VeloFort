@@ -1,2 +1,3 @@
 export { AudioPlayer } from './AudioPlayer';
 export { Dropdown } from './Dropdown';
+export { Button } from './Button';

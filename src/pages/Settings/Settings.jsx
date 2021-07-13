@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Dropdown } from '../../components';
+import { Dropdown, Button } from '../../components';
 import styles from './Settings.module.css';
 
 export const Settings = () => {
@@ -7,18 +7,18 @@ export const Settings = () => {
 
   return (
     <>
-      <h1>{t('settings')}</h1>
+      <h1>{t('settingsPage.settings')}</h1>
       <Dropdown />
       <div className={styles.inner}>
-        <h2 className={styles.title}>Оффлайн Аудиогид</h2>
-        <p>Позволяет загрузить необходимые файлы для прослушивания без подключения к интернету</p>
-        <div className={styles.button}>Загрузить</div>
+        <h2 className={styles.title}>{t('settingsPage.offline_audioguide')}</h2>
+        <p>{t('settingsPage.subtitle_offline_audioguide')}</p>
+        <Button>{t('settingsPage.btn_download')}</Button>
       </div>
       <div className={styles.inner}>
-        <h2 className={styles.title}>Скачать трек</h2>
-        <p>Маршрут содержит контрольные точки, полезную информацию об исторических объектах и всего, что вам понадобиться в пути</p>
-        <div className={styles.button}>Скачать трек</div>
-        <div className={styles.buttonWhite}>Скачать трек</div>
+        <h2 className={styles.title}>{t('settingsPage.download_track')}</h2>
+        <p>{t('settingsPage.subtitle_download_track')}</p>
+        <Button>{t('settingsPage.download_track')}</Button>
+        <div className={styles.buttonWhite}>{t('settingsPage.how_to_use_file')}</div>
       </div>
     </>
   );

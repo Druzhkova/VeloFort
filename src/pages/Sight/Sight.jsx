@@ -4,6 +4,6 @@ export const Sight = () => {
   const { t } = useTranslation();
 
   return (
-    <h1>{t('sight')}</h1>
+    <h1>{t('sightPage.sight')}</h1>
   );
 };
