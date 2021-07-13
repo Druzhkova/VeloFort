@@ -6,7 +6,7 @@ import { expandMore } from '../../assets';
 
 export const Dropdown = () => {
   const [isActive, setIsActive] = useState(false);
-  const [selected, setSelected] = useState('Русский');
+  const [selected, setSelected] = useState('English');
   const { t } = useTranslation();
 
   const languages = [
