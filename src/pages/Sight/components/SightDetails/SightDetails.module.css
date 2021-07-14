@@ -29,3 +29,14 @@
 .inner {
   margin-bottom: 50px;
 }
+
+.arrow {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.arrow:hover {
+  color: #0B24FB;
+  cursor: pointer;
+}
