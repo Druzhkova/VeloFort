@@ -1,6 +1,6 @@
 // import { useTranslation } from 'react-i18next';
 import {
-  useParams,
+  useParams, useHistory,
 } from 'react-router-dom';
 import styles from './SightDetails.module.css';
 import { AudioPlayer, Carousel } from '../../../../components';
@@ -10,6 +10,7 @@ import { data } from '../../../../assets/sight';
 export const SightDetails = () => {
   // const { t } = useTranslation();
   const { title } = useParams();
+  const history = useHistory();
 
   const [element] = data.filter((item) => item.title === title);
   const {
@@ -21,6 +22,7 @@ export const SightDetails = () => {
   return (
     <>
       {/* <h1>{t('settingsPage.settings')}</h1> */}
+      <div onClick={() => history.push('/sight')} className={styles.arrow}>&#8701;</div>
       <h1>{element.title}</h1>
       <AudioPlayer />
       <Carousel img={element.img} title={element.title} />
