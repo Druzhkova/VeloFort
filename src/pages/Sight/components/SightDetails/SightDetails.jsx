@@ -19,7 +19,7 @@ export const SightDetails = () => {
   } = element;
 
   return (
-    <>
+    <div className="sight-details">
       {/* <h1>{t('settingsPage.settings')}</h1> */}
       <div onClick={() => history.push('/sight')} className={styles.arrow}>&#8701;</div>
       <h1>{element.title}</h1>
@@ -58,6 +58,6 @@ export const SightDetails = () => {
         </div>
       </div>
       <p className={styles.description}>{description}</p>
-    </>
+    </div>
   );
 };
