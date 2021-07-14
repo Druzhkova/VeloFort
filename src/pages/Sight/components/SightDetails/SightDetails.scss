@@ -1,0 +1,33 @@
+.sight-details {
+  .layoutTwoColumn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .layoutTwoColumn > div {
+    width: 49%;
+  }
+
+  .title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .subtitle {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .inner {
+    margin-bottom: 50px;
+  }
+}

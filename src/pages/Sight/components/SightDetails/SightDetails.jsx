@@ -2,10 +2,10 @@
 import {
   useParams, useHistory,
 } from 'react-router-dom';
-import styles from './SightDetails.module.css';
-import { AudioPlayer, Carousel } from '../../../../components';
+import { AudioPlayer, Carousel } from '@/components';
+import { data } from '@/assets/sight';
 
-import { data } from '../../../../assets/sight';
+import styles from './SightDetails.scss';
 
 export const SightDetails = () => {
   // const { t } = useTranslation();
@@ -20,7 +20,7 @@ export const SightDetails = () => {
   } = element;
 
   return (
-    <>
+    <div className="sight-details">
       {/* <h1>{t('settingsPage.settings')}</h1> */}
       <div onClick={() => history.push('/sight')} className={styles.arrow}>&#8701;</div>
       <h1>{element.title}</h1>
@@ -59,6 +59,6 @@ export const SightDetails = () => {
         </div>
       </div>
       <p className={styles.description}>{description}</p>
-    </>
+    </div>
   );
 };
