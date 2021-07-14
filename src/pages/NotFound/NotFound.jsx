@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useHistory } from 'react-router-dom';
-import { notFound } from '../../assets';
+import { notFound } from '@assets';
 import styles from './NotFound.module.css';
 
 export const NotFound = () => {

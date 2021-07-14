@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next';
-import styles from './Information.module.css';
 import {
   schedule, arrow, lodging, food, cyclist, project,
-} from '../../assets';
-import { Button } from '../../components';
+} from '@assets';
+import { Button } from '@components';
+import styles from './Information.module.css';
 
 export const Information = () => {
   const { t } = useTranslation();

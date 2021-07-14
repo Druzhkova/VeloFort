@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Dropdown, Button } from '../../components';
+import { Dropdown, Button } from '@components';
 import styles from './Settings.module.css';
 
 export const Settings = () => {

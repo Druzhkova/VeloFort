@@ -19,7 +19,8 @@ export const convertSecondsToHours = (seconds) => {
 
   if (parseInt(hours, 10) > 0) {
     return `${parseInt(hours, 10)}h ${min}m ${sec}s`;
-  } if (min === 0) {
+  }
+  if (min === 0) {
     return `00m ${sec}s`;
   }
   return `${min}m ${sec}s`;
