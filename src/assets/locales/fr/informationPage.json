@@ -1,3 +1,12 @@
 {
-  "information": "Informations"
+  "title": "Informations",
+  "news": "Nouvelles",
+  "lodging": "Hébergement",
+  "food": "Aliments",
+  "pharmacy": "Pharmacies cyclistes",
+  "path": "Comment traverser la frontière",
+  "about": "à propos du projet",
+  "suppor": "Soutenir",
+  "support_the_project": "Soutenir le projet",
+  "support_the_project_title": "Même +1 rouble nous dit que notre travail est nécessaire et important. Nous essayons de rendre tout cela gratuit et disponible pour vous!"
 }
