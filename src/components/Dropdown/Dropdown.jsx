@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import styles from './Dropdown.module.css';
@@ -23,6 +23,17 @@ export const Dropdown = () => {
       name: 'Русский',
     },
   ];
+
+  useEffect(() => {
+    const data = localStorage.getItem('i18nextLng');
+    const [language] = languages.filter((item) => item.code === data);
+
+    if (language.name) {
+      setSelected(language.name);
+    } else {
+      setSelected('en');
+    }
+  }, []);
 
   return (
     <div className={styles.dropdown}>
