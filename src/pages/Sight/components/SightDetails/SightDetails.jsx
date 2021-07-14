@@ -2,10 +2,9 @@
 import {
   useParams, useHistory,
 } from 'react-router-dom';
+import { data } from '@assets/sight';
+import { AudioPlayer, Carousel } from '@components';
 import styles from './SightDetails.module.css';
-import { AudioPlayer, Carousel } from '../../../../components';
-
-import { data } from '../../../../assets/sight';
 
 export const SightDetails = () => {
   // const { t } = useTranslation();

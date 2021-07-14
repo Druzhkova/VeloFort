@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { data } from '@assets/sight';
 import { Item } from './components';
-import { data } from '../../assets/sight';
 
 export const Sight = () => {
   const { t } = useTranslation();

@@ -1,5 +1,5 @@
 import { Route, Switch, Redirect } from 'react-router-dom';
-import { Layout } from './layout';
+import { Layout } from '@layout';
 import {
   Information, Map, Settings, Sight, NotFound, SightDetails,
 } from './pages';

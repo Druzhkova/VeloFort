@@ -1,5 +1,5 @@
+import { marker, timeline, watch } from '@assets';
 import styles from './Item.module.css';
-import { marker, timeline, watch } from '../../../../assets';
 
 export const Item = ({
   img, title, time, distance,

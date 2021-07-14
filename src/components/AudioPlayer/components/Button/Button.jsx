@@ -1,4 +1,4 @@
-import { btnPlay } from '../../../../assets';
+import { btnPlay } from '@assets';
 import styles from './Button.module.css';
 
 export const Button = ({ play, isPlaying }) => (

@@ -1,6 +1,6 @@
 import React from 'react';
+import { convertSecondsToHours } from '@utils/convertSecondsToHours';
 import styles from './ControlPanel.module.css';
-import { convertSecondsToHours } from '../../../../utils/convertSecondsToHours';
 
 export const ControlPanel = ({ duration, currentTime }) => (
   <div className={styles.container}>

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
+import { expandMore } from '@assets';
 import styles from './Dropdown.module.css';
-import { expandMore } from '../../assets';
 
 export const Dropdown = () => {
   const [isActive, setIsActive] = useState(false);
